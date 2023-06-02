@@ -50,7 +50,8 @@ playermove = function (obj) {
   localStorage.setItem("score", JSON.stringify(score));
 };
 function fcomputermove() {
-  const randomNumber = Math.random();
+  var list = ["rock", "paper", "scissor"];
+  const randomNumber = Math.floor(Math.random() * 3);
   if (randomNumber >= 0 && randomNumber < 1 / 3) {
     computermove = "Rock";
   } else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
