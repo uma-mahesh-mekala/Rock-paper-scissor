@@ -52,13 +52,14 @@ playermove = function (obj) {
 function fcomputermove() {
   var list = ["rock", "paper", "scissor"];
   const randomNumber = Math.floor(Math.random() * 3);
-  if (randomNumber >= 0 && randomNumber < 1 / 3) {
-    computermove = "Rock";
-  } else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
-    computermove = "Paper";
-  } else {
-    computermove = "Scissor";
-  }
+  // if (randomNumber >= 0 && randomNumber < 1 / 3) {
+  //   computermove = "Rock";
+  // } else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
+  //   computermove = "Paper";
+  // } else {
+  //   computermove = "Scissor";
+  // }
+  computermove=list[randomNumber];
   return computermove;
 }
 updatescore1 = function () {
